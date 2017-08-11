@@ -9,7 +9,7 @@ const DefaultDecorators = [
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)}
-            onClick={this.handleClick}><</button>
+            onClick={this.handleClick}></button>
         )
       },
       handleClick(e) {
@@ -35,7 +35,7 @@ const DefaultDecorators = [
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide + this.props.slidesToScroll >= this.props.slideCount && !this.props.wrapAround)}
-            onClick={this.handleClick}>></button>
+            onClick={this.handleClick}></button>
         )
       },
       handleClick(e) {
@@ -69,7 +69,7 @@ const DefaultDecorators = [
                     <button
                       style={self.getButtonStyles(self.props.currentSlide === index)}
                       onClick={self.props.goToSlide.bind(null, index)}>
-                      &bull;
+                      <span>{self.props.currentSlide}</span>
                     </button>
                   </li>
                 )
