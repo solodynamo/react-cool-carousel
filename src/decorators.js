@@ -9,7 +9,7 @@ const DefaultDecorators = [
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)}
-            onClick={this.handleClick}><span class="glyphicon glyphicon-menu-left"></span></button>
+            onClick={this.handleClick}>&larr;</button>
         )
       },
       handleClick(e) {
@@ -35,7 +35,7 @@ const DefaultDecorators = [
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide + this.props.slidesToScroll >= this.props.slideCount && !this.props.wrapAround)}
-            onClick={this.handleClick}><span class="glyphicon glyphicon-menu-right"></span></button>
+            onClick={this.handleClick}>&larr;</button>
         )
       },
       handleClick(e) {
@@ -63,7 +63,7 @@ const DefaultDecorators = [
         return (
           <ul style={self.getListStyles()}>
             {
-              <li><span>{self.props.currentSlide} of {self.props.slideCount}</span></li>
+            <li style={self.getListItemStyles()}>Image<span>{self.props.currentSlide} of {self.props.slideCount}</span></li>
             }
           </ul>
         )
@@ -86,7 +86,9 @@ const DefaultDecorators = [
       getListItemStyles() {
         return {
           listStyleType: 'none',
-          display: 'inline-block'
+          display: 'inline-block',
+          fontSize: '12px',
+          color: '#5D5D5D'
         }
       },
       getButtonStyles(active) {
