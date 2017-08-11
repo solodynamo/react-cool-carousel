@@ -35,7 +35,7 @@ const DefaultDecorators = [
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide + this.props.slidesToScroll >= this.props.slideCount && !this.props.wrapAround)}
-            onClick={this.handleClick}>&larr;</button>
+            onClick={this.handleClick}>&rarr;</button>
         )
       },
       handleClick(e) {
@@ -63,7 +63,7 @@ const DefaultDecorators = [
         return (
           <ul style={self.getListStyles()}>
             {
-            <li style={self.getListItemStyles()}>Image<span>{self.props.currentSlide} of {self.props.slideCount}</span></li>
+            <li style={self.getListItemStyles()}>Image&nbsp;<span>{self.props.currentSlide+1} of {self.props.slideCount}</span></li>
             }
           </ul>
         )
