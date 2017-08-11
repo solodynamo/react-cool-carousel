@@ -1,12 +1,13 @@
 {
   "name": "react-cool-carousel",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Pure React Carousel",
   "main": "index.js",
   "dependencies": {
     "exenv": "^1.2.0",
-    "object-assign": "^4.1.0",
-    "kw-react-tween-state": "^0.1.5"
+    "glyphicons": "^0.2.0",
+    "kw-react-tween-state": "^0.1.5",
+    "object-assign": "^4.1.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.25",
