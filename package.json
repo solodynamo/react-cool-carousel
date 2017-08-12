@@ -4,6 +4,7 @@
   "description": "Pure React Carousel",
   "main": "index.js",
   "dependencies": {
+    "eslint-config-airbnb": "^15.1.0",
     "exenv": "^1.2.0",
     "glyphicons": "^0.2.0",
     "kw-react-tween-state": "^0.1.5",
